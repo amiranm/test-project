@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>GKA TEST PROJECT</title>
+</head>
+<!-- 
+1. The section must be 100% responsive
+2. Reuse Tailwind's pre-built CSS as much as possible.
+3. Colors and fonts
+
+(family, weight, size, etc.) must be controlled via CSS variables
+4. HTML and CSS must be appropriately commented
+5. You can use any logo/image. Find free stock photos/sources
+6. Use a 12 columns-grid
+7. The header menu must turn into a mobile menu on mobile.
+8. The review boxes are to be displayed as a slider with the option to add more review boxes from other sources.
+9. The Right column play button will trigger a video popup (Youtube video)
+10. Use pure HTML. 
+-->
+<body>
+    <!-- navigation bar  -->
+    <nav class="navbar">
+        <a href="">
+            <img src="./assets/images/udacity-logo.svg" alt="Sample Logo" width="48">
+        </a>
+        <ul class="navitems">
+            <li><a href="">Features</a></li>
+            <li><a href="">Solutions</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Pricing</a></li>
+            <li class="hidden max-md:block"><a href="" class="text-primary">Log in</a></li>
+            <li class="hidden max-md:block"><a href="" class="text-primary">Get Started</a></li>
+        </ul>
+        <div class="flex items-center">
+            <div class="xl:flex max-md:hidden">
+                <button class="lightbtn mr-3 xl:block">Log in</button>
+                <button class="primarybtn xl:block">Get Started</button>
+            </div>
+            <button class="navbtn">
+                <img src="./assets/images/nav-icon.svg" alt="" width="35">
+            </button>
+        </div>
+    </nav>
+    <!-- content  -->
+    <section id="landing" class=" pt-20">
+        <div class=" col-span-8 xl:mb-0 md:mb-6">
+            <p class=" text-primary font-semibold mb-4">BEST CAPTION HERE</p>
+            <h1 class=" text-6xl font-bold leading-normal">Build online business from home.</h1>
+            <h3 class=" font-semibold mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate accusamus fugit at libero et autem consectetur explicabo nesciunt. Reprehenderit at tenetur quas aliquid aspernatur minus deleniti iste asperiores illum.</h3>
+
+            <div class=" mb-16">
+                <button class="primarybtn mr-4 text-lg">Get Started</button>
+                <button class="bg-white font-bold p-3 rounded-full text-lg">Watch Video</button>
+            </div>
+
+            <div class="grid-content custom-scrollbar p-4">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="mb-3">
+                        <ul class="flex gap-1 mb-2">
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-secondary mb-3">(45k Reviews)</p>
+                    <div class="flex items-center mb-3">
+                        <img src="./assets/images/trustpilot-icon.svg" width="50" class="mr-2">
+                        <p class="text-2xl font-bold">Trustpilot</p>
+                    </div>
+                    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates officiis repudiandae odit vero quos perspiciatis."</p>
+                </div>
+            
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="mb-3">
+                        <ul class="flex gap-1 mb-2">
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-secondary mb-3">(45k Reviews)</p>
+                    <div class="flex items-center mb-3">
+                        <img src="./assets/images/trustpilot-icon.svg" width="50" class="mr-2">
+                        <p class="text-2xl font-bold">Trustpilot</p>
+                    </div>
+                    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates officiis repudiandae odit vero quos perspiciatis."</p>
+                </div>
+            
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="mb-3">
+                        <ul class="flex gap-1 mb-2">
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-secondary mb-3">(45k Reviews)</p>
+                    <div class="flex items-center mb-3">
+                        <img src="./assets/images/trustpilot-icon.svg" width="50" class="mr-2">
+                        <p class="text-2xl font-bold">Trustpilot</p>
+                    </div>
+                    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates officiis repudiandae odit vero quos perspiciatis."</p>
+                </div>
+
+                <!-- Card 4 -->
+               <div class="card">
+                    <div class="mb-3">
+                        <ul class="flex gap-1 mb-2">
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-secondary mb-3">(45k Reviews)</p>
+                    <div class="flex items-center mb-3">
+                        <img src="./assets/images/trustpilot-icon.svg" width="50" class="mr-2">
+                        <p class="text-2xl font-bold">Trustpilot</p>
+                    </div>
+                    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates officiis repudiandae odit vero quos perspiciatis."</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="mb-3">
+                        <ul class="flex gap-1 mb-2">
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                            <li>
+                                <img src="./assets/images/star-icon.svg" width="20">
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-secondary mb-3">(45k Reviews)</p>
+                    <div class="flex items-center mb-3">
+                        <img src="./assets/images/trustpilot-icon.svg" width="50" class="mr-2">
+                        <p class="text-2xl font-bold">Trustpilot</p>
+                    </div>
+                    <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates officiis repudiandae odit vero quos perspiciatis."</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="video-popup flex justify-center col-span-4" id="videoPopup">
+        <div class="video-container">
+            <!-- YouTube video embed -->
+            <iframe id="youtubeVideo" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="" height="700" width="476"></iframe>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            const $navButton = $('.navbtn');
+            const $navItems = $('.navitems');
+        
+            $navButton.on('click', function () {
+                $navItems.toggleClass('show');
+            });
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:css": "npx tailwindcss -i ./tailwind.css -o ./style.css --watch",
+    "build:css": "tailwindcss -i ./tailwind.css -o ./style.css --minify"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "dependencies": {}
+}

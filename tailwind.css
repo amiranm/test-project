@@ -1,0 +1,101 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root{
+    --font-family: 'Arial', sans-serif;
+    --font-size: 1rem;
+    --primary: #007df9;
+    --font-weight: 500;
+    --line-height: 1.5;
+    --text-color: #151a25;
+    --bg-color: #ebecec;
+    --fit-height: -webkit-fill-available;
+}
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    line-height: var(--line-height);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    @apply p-8;
+}
+.navbar{
+    @apply flex justify-between bg-white py-4 px-5 rounded-full items-center;
+}
+.navitems{
+    @apply flex gap-4 font-bold;
+    transition: opacity 0.5s ease-in;
+}
+.navitems.show {
+    @apply flex opacity-100;
+}
+.primarybtn{
+    @apply rounded-full py-3 px-4 text-white bg-primary font-bold;
+}
+.lightbtn{
+    @apply bg-white rounded-full border border-invert-secondary py-3 px-4 font-bold
+}
+#landing{
+    @apply xl:grid xl:grid-cols-12 md:grid-cols-1 gap-14;
+}
+.grid-content{
+    @apply flex overflow-x-auto  gap-4;
+}
+.card{
+    @apply bg-white rounded-xl p-5;
+    min-width: 300px;
+}
+.navbtn{
+    @apply hidden
+}
+.video-container{
+    iframe{
+        @apply rounded-2xl;
+    }
+}
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+    height: .5rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--bg-color); 
+    border-radius: .625rem;
+    margin-bottom: 1.25rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #4a5568;
+    border-radius: .625rem;
+    margin-bottom: 1.25rem;
+    border: 2px solid var(--bg-color);
+}
+
+/* Firefox */
+.custom-scrollbar {
+    scrollbar-width: thin; 
+    scrollbar-color: #4a5568 var(--bg-color); 
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .navitems{
+        @apply fixed flex-col bg-white top-32 p-5 rounded-2xl text-center mx-8 right-0 left-0 opacity-0;
+    }
+    nav ul li {
+        @apply block;
+    }
+    nav ul li a{
+        transition: color 0.3s ease-in;
+        @apply text-lg hover:text-primary;
+    }
+    .navbtn{
+        @apply block;
+    }
+    .video-container{
+        iframe{
+            width: var(--fit-height);
+        }
+    }
+}
