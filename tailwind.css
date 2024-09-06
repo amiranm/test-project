@@ -87,7 +87,7 @@ body{
 }
 @media (max-width: 768px) {
     .navitems{
-        position: fixed;
+        position: absolute;
         flex-direction: column;
         background: #fff;
         top: 8rem;
